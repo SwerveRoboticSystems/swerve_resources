@@ -1,0 +1,16 @@
+<package format="2">
+
+  <name>[package_name]</name>
+  <version>0.0.1</version>
+  <description>[package_description]</description>
+
+  <maintainer email="[email]">[full_name]</maintainer>
+  <author email="<[email]">[full_name]</author>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
+
+
