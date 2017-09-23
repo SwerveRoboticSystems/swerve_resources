@@ -10,6 +10,7 @@ Below in the [Software List section](#software) a list of the softwares that wil
 ## Table of Contents
 - [Software List](#software)
 - [Installing Software](#install)
+- [Other Information](#other)
 
 ## Revisions List
 Full Name | Email | Date | Revision | Description
@@ -31,6 +32,7 @@ the [installation section](#install) below.
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 - [Markdown Viewer Extension](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en)
 - [Doxygen](http://www.stack.nl/~dimitri/doxygen/)
+- [Terminator](https://gnometerminator.blogspot.ca/)
 
 [Back to top](#top)
 
@@ -55,6 +57,20 @@ tool, and can be added after installing Google Chrome using the direction shown 
 Chrome and add the extension
 - Go to [chrome://extensions/](chrome://extensions/)
 - Scroll to **Markdown Viewer** and clock the box labeled _"Allow access to file URLs"_
+
+[Back to top](#top)
+
+<a id="other"/>
+
+## Other Information
+
+Below is extra information regarding any of the software's in the [Software List section](#software).
+
+### Terminator
+This is the same as a terminal window but allows for the screen to be split horizontally and vertically as many times as desired. 
+
+To split the screen vertically, open up Terminator and click the following keys: **CTRL + SHIFT + E**  
+To split the screen horizontally, click the following keys: **CTRL + SHIFT + O**
 
 [Back to top](#top)
 

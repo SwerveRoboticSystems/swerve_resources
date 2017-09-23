@@ -9,6 +9,7 @@ RUN_DIR=$(pwd) # get directory of where the file was run from
 FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # get directory of the file
 cd $FILE_DIR
 
+
 #
 # Get Repository Locations
 #
@@ -27,6 +28,9 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C
 # Catkin Build
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+
+# Terminator
+sudo add-apt-repository ppa:gnome-terminator
 
 sudo apt-get update
 
@@ -57,6 +61,11 @@ sudo apt-get install sublime-text
 
 # Doxygen
 sudo apt-get install doxygen -y
+
+# Terminator
+# Terminator
+sudo apt-get install terminator
+
 
 cd $RUN_DIR # go back to directory location of where the file was run from
 

@@ -7,7 +7,6 @@ The examples folder gives C++ and Python examples of how to properly document co
 - [Install Doxygen](#install)
 - [Package Organization](#organization)
 - [Generate Documentation](#generate)
-- [Other Information](#other)
 
 ## Revisions List
 Full Name | Email | Date | Revision | Description
@@ -60,28 +59,6 @@ To generate the documentation from the code in the **scripts**, **inc**, and **s
 
 ```bash
 doxygen doxygen_config.conf
-```
-
-[Back to top](#top)
-
-<a id="other"/>
-
-## Other Information
-
-Below is a list of other tools that are useful to speed up development time.
-
-### Terminator
-This is the same as a terminal window but allows for the screen to be split horizontally and vertically as many times as desired. 
-
-To split the screen vertically, open up Terminator and click the following keys: **CTRL + SHIFT + E**  
-To split the screen horizontally, click the following keys: **CTRL + SHIFT + O**
-
-To install Terminator, run the commands below in a terminal window.
-
-```bash
-sudo add-apt-repository ppa:gnome-terminator
-sudo apt-get update
-sudo apt-get install terminator
 ```
 
 [Back to top](#top)
