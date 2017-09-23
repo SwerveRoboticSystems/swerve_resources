@@ -6,6 +6,7 @@ The examples folder gives C++ and Python examples of how to properly document co
 ## Table of Contents
 - [Install Doxygen](#install)
 - [Package Organization](#organization)
+- [Generate Documentation](#generate)
 - [Other Information](#other)
 
 ## Revisions List
@@ -14,7 +15,9 @@ Full Name | Email | Date | Revision | Description
 Frederick Wachter | wachterfreddy@gmail.com | 2017-09-18 | 0.0.0 | Initial document
 
 <a id="install"/>
+
 ## Install Doxygen
+
 Run the command below in the terminal window in order to download Doxygen.
 
 **Note:** _Doxygen is automatically downloaded using the [Linux setup script](../installations/setup.sh) and does not need to be redone_
@@ -26,7 +29,9 @@ sudo apt-get install doxygen
 [Back to top](#top)
 
 <a id="organization"/>
+
 ## Package Organization
+
 The package organization is expected to be the same as below.
 
 	- <package>
@@ -47,7 +52,10 @@ The package organization is expected to be the same as below.
 
 [Back to top](#top)
 
+<a id="generate"/>
+
 ## Generate Documentation
+
 To generate the documentation from the code in the **scripts**, **inc**, and **src** folder, run the command below from within the _config_ directory.
 
 ```bash
@@ -57,7 +65,9 @@ doxygen doxygen_config.conf
 [Back to top](#top)
 
 <a id="other"/>
+
 ## Other Information
+
 Below is a list of other tools that are useful to speed up development time.
 
 ### Terminator

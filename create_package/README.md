@@ -16,6 +16,7 @@ Full Name | Email | Date | Revision | Description
 Frderick Wachter | wachterfreddy@gmail.com | 2017-09-18 | 0.0.0 | Initial document
 
 <a id="location"/>
+
 ## Folder Location
 
 The **swerve_resources** folder is expected to be located at the directory shown below. The alias that is
@@ -29,6 +30,7 @@ files within the **swerve_resources/create_package** folder in order to auto-gen
 [Back to top](#top)
 
 <a id="alias"/>
+
 ## Adding Alias for Command Line
 
 In order to automatically place the alias for autogenerating a skeleton ROS package, use the command below.
@@ -44,6 +46,7 @@ bash setup.sh
 [Back to top](#top)
 
 <a id="create"/>
+
 ## Create Skeleton ROS Package
 
 To create a skeleton ROS package, use the command below. This will create the ROS package with the provided 

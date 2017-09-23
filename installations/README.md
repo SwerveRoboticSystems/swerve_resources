@@ -17,6 +17,7 @@ Full Name | Email | Date | Revision | Description
 Frderick Wachter | wachterfreddy@gmail.com | 2017-09-18 | 0.0.0 | Initial document
 
 <a id="software"/>
+
 ## Software List
 
 Below is listed the software that should be installed on the Linux machine in order to work properly with 
@@ -34,6 +35,7 @@ the [installation section](#install) below.
 [Back to top](#top)
 
 <a id="install"/>
+
 ## Installing Software
 
 To install the software mentioned in the [Software List section](#software) above, run the command below
