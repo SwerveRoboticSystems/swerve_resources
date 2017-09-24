@@ -1,5 +1,5 @@
 #!/bin/bash
-## @file setup_software.sh
+## @file setup.sh
 #  @brief Sets up programs on a new Linux installation that is used for development and operation
 #  @author Frederick Wachter - wachterfreddy@gmail.com
 #  @date Created: 2017-09-18
@@ -56,13 +56,11 @@ $ sudo apt-get install python-catkin-tools
 
 # Sublime Text Editor 2
 sudo apt-get install sublime-text
-
 # bash setup_sublime.sh # TODO: setup Sublime to Google C++ Style Guidelines
 
 # Doxygen
 sudo apt-get install doxygen -y
 
-# Terminator
 # Terminator
 sudo apt-get install terminator
 
