@@ -8,6 +8,7 @@ this folder must be the same as it is described below in order for the comment t
 ## Table of Contents
 - [Folder Location](#location)
 - [Adding Alias for Command Line](#alias)
+- [ROS Skeleton Package Layout](#layout)
 - [Create Skeleton ROS Package](#create)
 
 ## Revisions List
@@ -42,6 +43,29 @@ be redone_
 cd ~/Swerve/swerve_resources/create_package
 bash setup.sh
 ```
+
+[Back to top](#top)
+
+<a id="layout">
+
+## ROS Skeleton Package Layout
+
+The skeleton ROS package that is generated using the command shown [below](#create) will create a package with the file structure shown below using the general ROS package files included in the **package_files** folder.
+
+- **[package_name]**
+	- **config**
+		- doxygen_config.conf
+	- **inc**
+	- **launch**
+	- **resource**
+	- **scripts**
+	- **src**
+	- CMakeLists.txt
+	- package.xml
+	- README.md
+	- index.html
+
+> Bolded items represent folders
 
 [Back to top](#top)
 

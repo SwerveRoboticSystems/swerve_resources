@@ -4,6 +4,7 @@
 #  @author Frederick Wachter - wachterfreddy@gmail.com
 #  @date Created: 2017-09-18
 
+echo "Adding create_package alias to bashrc file"
 echo "alias create_package=\'bash ~/Swerve/swerve_package/create_package.sh\'" >> ~/.bashrc
 
 

@@ -9,6 +9,26 @@ RUN_DIR=$(pwd) # get directory of where the file was run from
 FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # get directory of the file
 cd $FILE_DIR
 
+echo "Starting Linux setup script"
+
+
+#
+# Create ROS Swerve Workspace and Aliases
+#
+
+cd ~/Swerve
+
+# Crete Swerve ROS workspace and get swerve meta-package
+mkdir swerve_ws swerve_ws/src
+cd ~/swerve_ws/src
+git clone https://github.com/SwerveRoboticSystems/swerve.git
+echo "alias wsroot=\'cd ~/Swerve/swerve_ws\'" >> ~/.bashrc
+
+# Get Swerve resources repository
+cd ~/Swerve/swerve_resources/create_package
+bash setup.sh
+cd ~/Swerve
+
 
 #
 # Get Repository Locations
@@ -42,8 +62,8 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable -y
 
 # ROS Indigo
-sudo apt-get install ros-indigo-desktop-full
-sudo apt-get install python-rosinstall
+sudo apt-get install ros-indigo-desktop-full -y
+sudo apt-get install python-rosinstall -y
 
 sudo rosdep init
 rosdep update
@@ -52,18 +72,21 @@ echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Catkin Build
-$ sudo apt-get install python-catkin-tools
+$ sudo apt-get install python-catkin-tools -y
 
 # Sublime Text Editor 2
-sudo apt-get install sublime-text
+sudo apt-get install sublime-text -y
 # bash setup_sublime.sh # TODO: setup Sublime to Google C++ Style Guidelines
 
 # Doxygen
 sudo apt-get install doxygen -y
 
 # Terminator
-sudo apt-get install terminator
+sudo apt-get install terminator -y
 
+
+clear
+echo "Finished Linux setup script"
 
 cd $RUN_DIR # go back to directory location of where the file was run from
 

@@ -40,10 +40,31 @@ the [installation section](#install) below.
 
 ## Installing Software
 
+### Before Installing
+In order for the installation to work properly, the **swerve_resources** repo must be placed in the directory listed below.
+
+```bash
+~/Swerve/swerve_resources
+```
+
+If this repo is not, please create a **Swerve** directory in the user home directory (cd ~/) and place the **swerve_resources** folder inside of there. This is required for the setup and aliases to be setup properly.
+
+### Aliases
+Below is the list of aliases that will be added to the local **bashrc** file of the user when the installation script is run. 
+
+Command | Description
+--- | ---
+create_package [package_name] | Creates a skeleton ROS package with the provided package name in the current directory of where the command was run
+wsroot | Brings you to the root of the Swerve ROS workspace (~/Swerve/swerve_ws)
+> Replace [package_name] with the desired name for the ROS package
+
+### Installing
 To install the software mentioned in the [Software List section](#software) above, run the command below
-from the command line. If there are any issues with the installation, please notify 
+from the command line. 
+
+**Note:** _If there are any issues with the installation, please notify 
 [Frederick Wachter](mailto:wachterfreddy@gmail.com?Subject=Swerve%20Software%20Installation%20Issue&Body=Name%3A%20%0AIssue%3A%20) 
-so that we can improve the installation file for future users.
+so that we can improve the installation file for future users._
 
 ```bash
 cd ~/Swerve/swerve_resources/installations
