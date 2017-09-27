@@ -12,14 +12,14 @@ mkdir ~/Swerve
 cd ~/Swerve
 
 # Crete Swerve ROS workspace and get swerve meta-package
-mkdir swerve_ws swerve_ws/src swerve_resources
+mkdir swerve_ws swerve_ws/src
 
-cd ~/swerve_ws/src
+cd ~/Swerve/swerve_ws/src
 git clone https://github.com/SwerveRoboticSystems/swerve.git
 echo "alias wsroot=\'cd ~/Swerve/swerve_ws\'" >> ~/.bashrc
 cd ~/Swerve
 
-mv ~/swerve_resources/ ~/Swerve/swerve_resources/
+mv ~/swerve_resources/ ~/Swerve/
 
 # Get Swerve resources repository
 bash swerve_resources/create_package/setup.sh
