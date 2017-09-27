@@ -1,5 +1,4 @@
 # Swerve Resources - Installations
-<a id="top"/>
 
 This folder contains a setup file that will automatically download required and useful software/applications
 in order to run the Swerve ROS pacakage and for faster development. 

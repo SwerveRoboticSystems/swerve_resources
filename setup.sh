@@ -16,7 +16,7 @@ mkdir swerve_ws swerve_ws/src
 
 cd ~/Swerve/swerve_ws/src
 git clone https://github.com/SwerveRoboticSystems/swerve.git
-echo "alias wsroot=\'cd ~/Swerve/swerve_ws\'" >> ~/.bashrc
+echo "alias wsroot='cd ~/Swerve/swerve_ws'" >> ~/.bashrc
 cd ~/Swerve
 
 mv ~/swerve_resources/ ~/Swerve/

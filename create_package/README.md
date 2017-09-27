@@ -1,5 +1,4 @@
 # Swerve Resources - Create Package
-<a id="top"/>
 
 This folder contains files the make a generic skeleton ROS package using a command line alias that is applied 
 to the **~/.bashrc** file when the [setup script](./setup.sh) is run. In order for this to work properly, the location of 

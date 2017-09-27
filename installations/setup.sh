@@ -40,6 +40,7 @@ sudo apt-get update
 #
 
 # Google Chrome
+sudo apt-get install --reinstall libnss3
 sudo apt-get install google-chrome-stable -y
 
 # ROS Indigo
@@ -53,7 +54,7 @@ echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Catkin Build
-$ sudo apt-get install python-catkin-tools -y
+sudo apt-get install python-catkin-tools -y
 
 # Sublime Text Editor 2
 sudo apt-get install sublime-text -y
@@ -64,6 +65,10 @@ sudo apt-get install doxygen -y
 
 # Terminator
 sudo apt-get install terminator -y
+
+# Vim
+sudo apt-get install vim -y
+cp .vimrc ~/
 
 
 clear

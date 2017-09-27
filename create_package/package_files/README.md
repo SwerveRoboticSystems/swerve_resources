@@ -1,5 +1,4 @@
 # [package_name]
-<a id="top"/>
 
 [package description]
 

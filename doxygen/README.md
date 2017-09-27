@@ -1,5 +1,4 @@
 # Swerve Resources - Doxygen Documentation Examples
-<a id="top"/>
 
 The examples folder gives C++ and Python examples of how to properly document code to work with doxygen auto code documentation generator. 
 
