@@ -11,25 +11,6 @@ cd $FILE_DIR
 
 echo "Starting Linux setup script"
 
-
-#
-# Create ROS Swerve Workspace and Aliases
-#
-
-cd ~/Swerve
-
-# Crete Swerve ROS workspace and get swerve meta-package
-mkdir swerve_ws swerve_ws/src
-cd ~/swerve_ws/src
-git clone https://github.com/SwerveRoboticSystems/swerve.git
-echo "alias wsroot=\'cd ~/Swerve/swerve_ws\'" >> ~/.bashrc
-
-# Get Swerve resources repository
-cd ~/Swerve/swerve_resources/create_package
-bash setup.sh
-cd ~/Swerve
-
-
 #
 # Get Repository Locations
 #
