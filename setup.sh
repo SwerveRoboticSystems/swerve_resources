@@ -30,4 +30,11 @@ bash swerve_resources/create_package/setup.sh
 
 bash swerve_resources/installations/setup.sh
 
+#
+# Build ROS Workspace
+#
+
+cd swerve_ws
+catkin build
+
 
