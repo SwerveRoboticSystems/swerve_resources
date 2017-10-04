@@ -39,6 +39,13 @@ twice), go ahead and do so to continue the installation.
 
 More information can be found in the README's in each of the folders included in this repo.
 
+### Arduino IDE
+
+When first opening the Arudino IDE either by command line or searching the program, you may 
+be asked to add or ignore adding your user to various needed groups to be able to utilize 
+the IDE properly. If this comes up, click add and type your password. This will be promted 
+each time the Arduino IDE is opened but it will not show up again if you log out and back in. 
+
 [Back to top](#top)
 
 

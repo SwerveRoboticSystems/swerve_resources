@@ -70,6 +70,9 @@ sudo apt-get install terminator -y
 sudo apt-get install vim -y
 cp .vimrc ~/
 
+# Arduino IDE
+sudo apt-get install arduino
+
 
 clear
 echo "Finished Linux setup script"
