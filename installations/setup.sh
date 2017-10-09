@@ -33,6 +33,10 @@ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 # Terminator
 sudo add-apt-repository ppa:gnome-terminator
 
+# BLDC
+sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+
 sudo apt-get update
 
 #
@@ -40,7 +44,7 @@ sudo apt-get update
 #
 
 # Google Chrome
-sudo apt-get install --reinstall libnss3
+sudo apt-get install --reinstall libnss3 -y
 sudo apt-get install google-chrome-stable -y
 
 # ROS Indigo
@@ -71,7 +75,12 @@ sudo apt-get install vim -y
 cp .vimrc ~/
 
 # Arduino IDE
-sudo apt-get install arduino
+sudo apt-get install arduino -y
+
+# BLDC
+sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1trusty1 -y
+sudo apt-get install build-essential qt-sdk openocd git libudev-dev libqt5serialport5-dev -y
+sudo apt-get remove modemmanager -y
 
 
 clear

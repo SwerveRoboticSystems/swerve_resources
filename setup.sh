@@ -11,13 +11,19 @@
 mkdir ~/Swerve
 cd ~/Swerve
 
-# Crete Swerve ROS workspace and get swerve meta-package
+# Create Swerve ROS workspace, get swerve meta-package, and build BLDC Tool 
 mkdir swerve_ws swerve_ws/src
 
 cd ~/Swerve/swerve_ws/src
 git clone https://github.com/SwerveRoboticSystems/swerve.git
 echo "alias wsroot='cd ~/Swerve/swerve_ws'" >> ~/.bashrc
+
 cd ~/Swerve
+git clone https://github.com/vedderb/bldc-tool.git bldc-tool
+cd ~/Swerve/bldc-tool
+qmake -qt=qt5
+make
+echo "alias BLDC='~/Swerve/bldc-tool/BLDC_Tool'" >> ~/.bashrc
 
 mv ~/swerve_resources/ ~/Swerve/
 
@@ -29,6 +35,7 @@ bash swerve_resources/create_package/setup.sh
 #
 
 bash swerve_resources/installations/setup.sh
+sudo adduser $USER dialout
 
 #
 # Build ROS Workspace
