@@ -23,7 +23,7 @@ git clone https://github.com/vedderb/bldc-tool.git bldc-tool
 cd ~/Swerve/bldc-tool
 qmake -qt=qt5
 make
-echo "alias BLDC='~/Swerve/bldc-tool/BLDC_Tool &'" >> ~/.bashrc
+echo "alias bldc='~/Swerve/bldc-tool/BLDC_Tool &'" >> ~/.bashrc
 
 mv ~/swerve_resources/ ~/Swerve/
 
