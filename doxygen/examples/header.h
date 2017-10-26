@@ -1,4 +1,4 @@
-/*! @file <file_name>.h
+/** @file <file_name>.h
  *  @brief <file_description>
  *  @author <first_name> <last_name> - <email>
  *  @date Created: <date>
@@ -11,7 +11,7 @@
 
 #define <define_name> <define_value> /**< <define_description> */
 
-/*! @struct <struct_name>
+/** @struct <struct_name>
  *  @brief <struct_description>
  *  @author <first_name> <last_name> - <email>
  *  @date Created: <date>
@@ -22,14 +22,14 @@ struct StructName {
 };
 
 namespace namespace_name {
-/*! @namespace <namespace_name>
+/** @namespace <namespace_name>
  *  @brief <namespace_description>
  *  @author <first_name> <last_name> - <email>
  *  @date Created: <date>
  */
 
 	void function(int&, int*);
-	/*! @fn void function(int&, int*)
+	/** @fn void function(int&, int*)
 	 *  @brief <function_description>
 	 *  @author <first_name> <last_name> - <email>
 	 *  @date Created: <date>
@@ -38,7 +38,7 @@ namespace namespace_name {
 }
 
 class ClassName {
-/*! @class <class_name>
+/** @class <class_name>
  *  @brief <class_description>
  *  @author <first_name> <last_name> - <email>
  *  @date Created: <date>
@@ -46,7 +46,7 @@ class ClassName {
 
 public:
 	void function(int&, int*);
-	/*! @fn void function(int&, int*)
+	/** @fn void function(int&, int*)
 	 *  @brief <function_description>
 	 *  @author <first_name> <last_name> - <email>
 	 *  @date Created: <date>
