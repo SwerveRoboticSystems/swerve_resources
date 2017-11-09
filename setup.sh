@@ -15,6 +15,7 @@ cd ~/Swerve
 mkdir swerve_ws swerve_ws/src
 
 cd ~/Swerve/swerve_ws/src
+git config --global pull.rebase true # force rebase when pulling
 git clone git@github.com:SwerveRoboticSystems/swerve.git
 git clone git@github.com:SwerveRoboticSystems/sick_tim.git
 
