@@ -13,8 +13,8 @@ install(
 )
 
 # <exec_name> Node
-add_executable([exec_name] src/[file_1].cpp src/[file_2].cpp)
-target_link_libraries([exec_name] ${catkin_LIBRARIES})
-add_dependencies([exec_name] [package_name]_generate_messages_cpp)
+# add_executable([exec_name] src/[file_1].cpp src/[file_2].cpp)
+# target_link_libraries([exec_name] ${catkin_LIBRARIES})
+# add_dependencies([exec_name] [package_name]_generate_messages_cpp)
 
 
