@@ -4,7 +4,7 @@
 #  @author Frederick Wachter - wachterfreddy@gmail.com
 #  @date Created: 2017-09-18
 
-echo $1
+echo "Creating ROS package: $1"
 package_name=$1
 mkdir $package_name
 
@@ -16,5 +16,7 @@ cp ~/Swerve/swerve_resources/create_package/package_files/CMakeLists.txt ./CMake
 cp ~/Swerve/swerve_resources/create_package/package_files/package.xml ./package.xml
 cp ~/Swerve/swerve_resources/create_package/package_files/index.html ./index.html
 cp ~/Swerve/swerve_resources/create_package/package_files/README.md ./README.md
+
+echo "Package created"
 
 

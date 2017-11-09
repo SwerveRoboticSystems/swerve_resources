@@ -15,8 +15,13 @@ cd ~/Swerve
 mkdir swerve_ws swerve_ws/src
 
 cd ~/Swerve/swerve_ws/src
-git clone https://github.com/SwerveRoboticSystems/swerve.git
-echo "alias wsroot='cd ~/Swerve/swerve_ws'" >> ~/.bashrc
+git clone git@github.com:SwerveRoboticSystems/swerve.git
+git clone git@github.com:SwerveRoboticSystems/sick_tim.git
+
+echo "alias swerve_ws='cd ~/Swerve/swerve_ws'" >> ~/.bashrc
+echo "alias source_swerve='source ~/Swerve/swerve_ws/devel/setup.bash'" >> ~/.bashrc
+echo "alias swerve='cd ~/Swerve/swerve_ws/src/swerve'" >> ~/.bashrc
+echo "alias sick='cd ~/Swerve/swerve_ws/src/sick_tim'" >> ~/.bashrc
 
 cd ~/Swerve
 git clone https://github.com/vedderb/bldc-tool.git bldc-tool
