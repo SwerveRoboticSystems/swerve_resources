@@ -50,6 +50,9 @@ sudo apt-get install google-chrome-stable -y
 # ROS Indigo
 sudo apt-get install ros-indigo-desktop-full -y
 sudo apt-get install python-rosinstall -y
+sudo apt-get install ros-indigo-ros-control
+sudo apt-get install ros-indigo-ros-controllers
+sudo apt-get install ros-indigo-gazebo-ros-control
 
 sudo rosdep init
 rosdep update
@@ -76,6 +79,12 @@ cp .vimrc ~/
 
 # Arduino IDE
 sudo apt-get install arduino -y
+
+# Kazam
+sudo apt-get install kazam -y
+
+# Reocrd My Desktop
+sudo apt-get install gtk-recordmydesktop -y
 
 # BLDC
 sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1trusty1 -y
