@@ -10,22 +10,22 @@
 
 echo "[SWERVE] Setting up Swerve workspace"
 
+FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 #
 # Create Swerve folder
 #
 
-mkdir ~/Swerve
-cd ~/Swerve
+mkdir $FILE_DIR/../Swerve
+cd $FILE_DIR/../Swerve
+SWERVE_DIR=$(pwd)
 
 # Move Swerve resources repo to Swerve folder
-FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-mv FILE_DIR/ ~/Swerve/
+mv $FILE_DIR/ $SWERVE_DIR/
 
-# Auto source Swerve aliases
-echo "source ~/Swerve/swerve_resources/alias.sh" >> ~/.bashrc
-
-# Add user to dialout group
-sudo adduser $USER dialout
+# Auto source
+echo "source $SWERVE_DIR/swerve_resources/alias.sh" >> ~/.bashrc # Swerve aliases
+echo "source $SWERVE_DIR/swerve_ws/devel/setup.bash" >> ~/.bashrc # Swerve workspace
 
 #
 # Create Swerve ROS workspace and build BLDC Tool 
@@ -33,22 +33,38 @@ sudo adduser $USER dialout
 
 mkdir swerve_ws swerve_ws/src
 
-cd ~/Swerve/swerve_ws/src
+# Setup Swerve workspace
+cd $SWERVE_DIR/swerve_ws/src
 git config --global pull.rebase true # force rebase when pulling
 git clone git@github.com:SwerveRoboticSystems/swerve.git # get swerve repo
 git clone git@github.com:SwerveRoboticSystems/sick_tim.git # get SICK TiM561 repo
 
-cd ~/Swerve
+# Setup and build BLDC tool
+cd $SWERVE_DIR
 git clone https://github.com/vedderb/bldc-tool.git bldc-tool # get BLDC tool
-cd ~/Swerve/bldc-tool
+
+# BLDC tool dependent repository locations
+sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi -y
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded -y
+
+sudo apt-get update
+
+# BLDC install dependent repositories
+sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1trusty1 -y --force-yes
+sudo apt-get install build-essential qt-sdk openocd git libudev-dev libqt5serialport5-dev -y
+sudo apt-get remove modemmanager -y
+
+cd $SWERVE_DIR/bldc-tool
 qmake -qt=qt5
-make
+make clean && make
+
+sudo adduser $USER dialout # Add user to dialout group
 
 #
 # Build ROS Workspace
 #
 
-cd ~/Swerve/swerve_ws
+cd $SWERVE_DIR/swerve_ws
 catkin build
 
 

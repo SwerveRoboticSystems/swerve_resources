@@ -25,6 +25,7 @@ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 # Install ROS
 sudo apt-get install ros-$1-desktop-full -y
 sudo apt-get install python-rosinstall -y
+sudo apt-get install python-catkin-tools -y # catkin build
 sudo apt-get install ros-$1-ros-control -y
 sudo apt-get install ros-$1-ros-controllers -y
 sudo apt-get install ros-$1-gazebo-ros-control -y
@@ -34,8 +35,5 @@ rosdep update
 
 echo "source /opt/ros/$1/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-
-# Catkin Build
-sudo apt-get install python-catkin-tools -y
 
 
