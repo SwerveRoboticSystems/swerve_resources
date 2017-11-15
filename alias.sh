@@ -1,10 +1,8 @@
 #!/bin/bash
 ## @file alias.sh
-#  @brief 
+#  @brief Aliases for quicker development
 #  @author Frederick Wachter - wachterfreddy@gmail.com
-#  @date Created: 2017-09-27
-
-echo "[SWERVE] Adding Swerve aliases to bashrc file"
+#  @date Created: 2017-11-15
 
 alias swerve_ws='cd ~/Swerve/swerve_ws'
 alias source_swerve='source ~/Swerve/swerve_ws/devel/setup.bash'
