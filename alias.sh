@@ -18,4 +18,7 @@ alias swerve_display='roslaunch swerve_description display.launch'
 alias swerve_simple_demo='roslaunch swerve_navigation simple_demo.launch'
 alias get_tf='rosrun tf view_frames'
 
+alias video_player='banshee'
+alias video_recorder='vokoscreen'
+
 
