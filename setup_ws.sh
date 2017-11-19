@@ -26,15 +26,16 @@ mv $FILE_DIR/ $SWERVE_DIR/
 # Auto source
 echo "source $SWERVE_DIR/swerve_resources/alias.sh" >> ~/.bashrc # Swerve aliases
 echo "source $SWERVE_DIR/swerve_ws/devel/setup.bash" >> ~/.bashrc # Swerve workspace
+echo "export SWERVE_DIR=$SWERVE_DIR" >> ~/.bashrc # Swerve workspace
 
 #
 # Create Swerve ROS workspace and build BLDC Tool 
 #
 
+cd $SWERVE_DIR
 mkdir swerve_ws swerve_ws/src
 
 # Setup Swerve workspace
-cd $SWERVE_DIR/swerve_ws/src
 git config --global pull.rebase true # force rebase when pulling
 git clone git@github.com:SwerveRoboticSystems/swerve.git # get swerve repo
 git clone git@github.com:SwerveRoboticSystems/sick_tim.git # get SICK TiM561 repo
