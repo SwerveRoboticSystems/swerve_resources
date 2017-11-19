@@ -24,6 +24,12 @@ sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi
 sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
 
+# Banshee
+sudo add-apt-repository ppa:banshee-team/ppa
+
+# Vokoscreen
+sudo add-apt-repository ppa:vokoscreen-dev/vokoscreen
+
 sudo apt-get update
 
 #
@@ -47,8 +53,11 @@ sudo apt-get install terminator -y
 # Arduino IDE
 sudo apt-get install arduino -y
 
-# Kazam
-sudo apt-get install kazam -y
+# Banshee
+sudo apt-get install banshee
+
+# Vokoscreen
+sudo apt-get install vokoscreen
 
 # BLDC
 sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1trusty1 -y
