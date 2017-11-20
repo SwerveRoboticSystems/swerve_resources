@@ -24,11 +24,10 @@ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 
 # Install ROS
 sudo apt-get install ros-$1-desktop-full -y
-sudo apt-get install python-rosinstall -y
-sudo apt-get install python-catkin-tools -y # catkin build
 sudo apt-get install ros-$1-ros-control -y
 sudo apt-get install ros-$1-ros-controllers -y
 sudo apt-get install ros-$1-gazebo-ros-control -y
+sudo apt-get install ros-$1-sick-tim # sick tim
 
 sudo rosdep init
 rosdep update

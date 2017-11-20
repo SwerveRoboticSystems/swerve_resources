@@ -37,8 +37,8 @@ mkdir swerve_ws swerve_ws/src
 
 # Setup Swerve workspace
 git config --global pull.rebase true # force rebase when pulling
-git clone git@github.com:SwerveRoboticSystems/swerve.git # get swerve repo
-git clone git@github.com:SwerveRoboticSystems/sick_tim.git # get SICK TiM561 repo
+git clone https://github.com/SwerveRoboticSystems/swerve.git # get swerve repo
+git clone https://github.com/SwerveRoboticSystems/sick_tim.git # get SICK TiM561 repo
 
 # Setup and build BLDC tool
 cd $SWERVE_DIR
@@ -64,6 +64,9 @@ sudo adduser $USER dialout # Add user to dialout group
 #
 # Build ROS Workspace
 #
+
+sudo apt-get install python-rosinstall -y
+sudo apt-get install python-catkin-tools -y # catkin build
 
 cd $SWERVE_DIR/swerve_ws
 catkin build
