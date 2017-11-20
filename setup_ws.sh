@@ -34,6 +34,7 @@ echo "export SWERVE_DIR=$SWERVE_DIR" >> ~/.bashrc # Swerve workspace
 
 cd $SWERVE_DIR
 mkdir swerve_ws swerve_ws/src
+cd $SWERVE_DIR/swerve_ws/src
 
 # Setup Swerve workspace
 git config --global pull.rebase true # force rebase when pulling
