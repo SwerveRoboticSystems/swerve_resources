@@ -6,7 +6,7 @@
 
 alias swerve_ws='cd $SWERVE_DIR/swerve_ws'
 alias swerve_build='cd $SWERVE_DIR/swerve_ws && catkin build'
-alias source_swerve='source $SWERVE_DIR/swerve_ws/devel/setup.bash'
+alias swerve_source='source $SWERVE_DIR/swerve_ws/devel/setup.bash'
 alias bldc='$SWERVE_DIR/bldc-tool/BLDC_Tool &'
 alias create_package='bash $SWERVE_DIR/swerve_resources/create_package/create_package.sh'
 alias swerve_resources='cd $SWERVE_DIR/swerve_resources/'
