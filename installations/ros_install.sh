@@ -6,17 +6,15 @@
 
 echo "[SWERVE] Installing ROS"
 
+FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 #
 # Get Repository Locations
 #
 
-# ROS Indigo
+# ROS
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
-
-# Catkin Build
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
-wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 
 #
 # Install Packages
@@ -24,15 +22,15 @@ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 
 # Install ROS
 sudo apt-get install ros-$1-desktop-full -y
-sudo apt-get install ros-$1-ros-control -y
-sudo apt-get install ros-$1-ros-controllers -y
-sudo apt-get install ros-$1-gazebo-ros-control -y
-sudo apt-get install ros-$1-sick-tim # sick tim
 
 sudo rosdep init
 rosdep update
 
 echo "source /opt/ros/$1/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+# Install Supporting ROS Packages
+cd $FILE_DIR
+bash ros_pkgs_install.sh $1 # install supporting ROS packages
 
 
