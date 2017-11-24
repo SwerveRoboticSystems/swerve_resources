@@ -52,7 +52,8 @@ sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded -y
 sudo apt-get update
 
 # BLDC install dependent repositories
-sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1trusty1 -y --force-yes
+. /etc/lsb-release # get Ubuntu distribution name
+sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1${DISTRIB_CODENAME}1 -y --force-yes
 sudo apt-get install build-essential qt-sdk openocd git libudev-dev libqt5serialport5-dev -y
 sudo apt-get remove modemmanager -y
 
