@@ -54,10 +54,10 @@ sudo apt-get install terminator -y
 sudo apt-get install arduino -y
 
 # Banshee
-sudo apt-get install banshee
+sudo apt-get install banshee -y
 
 # Vokoscreen
-sudo apt-get install vokoscreen
+sudo apt-get install vokoscreen -y
 
 # BLDC
 sudo apt-get install gcc-arm-none-eabi=4.9.3.2015q3-1trusty1 -y
@@ -68,6 +68,6 @@ sudo apt-get remove modemmanager -y
 sudo apt-get install vim -y
 
 FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # get directory of where this file is located
-cp FILE_DIR/.vimrc ~/ # copy Swerve vim file to user home
+cp $FILE_DIR/.vimrc ~/ # copy Swerve vim file to user home
 
 
