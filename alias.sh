@@ -4,10 +4,13 @@
 #  @author Frederick Wachter - wachterfreddy@gmail.com
 #  @date Created: 2017-11-15
 
+alias swerve_dir='cd $SWERVE_DIR'
 alias swerve_ws='cd $SWERVE_DIR/swerve_ws'
 alias swerve_build='cd $SWERVE_DIR/swerve_ws && catkin build'
 alias swerve_source='source $SWERVE_DIR/swerve_ws/devel/setup.bash'
 alias bldc='$SWERVE_DIR/bldc-tool/BLDC_Tool &'
+alias arduino='$SWERVE_DIR/arduino_ide/arduino &'
+alias teensy='$SWERVE_DIR/arduino_ide/teensy &'
 alias create_package='bash $SWERVE_DIR/swerve_resources/create_package/create_package.sh'
 alias swerve_resources='cd $SWERVE_DIR/swerve_resources/'
 

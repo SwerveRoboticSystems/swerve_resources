@@ -24,9 +24,9 @@ SWERVE_DIR=$(pwd)
 mv $FILE_DIR/ $SWERVE_DIR/
 
 # Auto source
+echo "export SWERVE_DIR=$SWERVE_DIR" >> ~/.bashrc # Swerve workspace
 echo "source $SWERVE_DIR/swerve_resources/alias.sh" >> ~/.bashrc # Swerve aliases
 echo "source $SWERVE_DIR/swerve_ws/devel/setup.bash" >> ~/.bashrc # Swerve workspace
-echo "export SWERVE_DIR=$SWERVE_DIR" >> ~/.bashrc # Swerve workspace
 
 #
 # Create Swerve ROS workspace and build BLDC Tool 

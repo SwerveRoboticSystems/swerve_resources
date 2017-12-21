@@ -50,9 +50,6 @@ sudo apt-get install doxygen -y
 # Terminator
 sudo apt-get install terminator -y
 
-# Arduino IDE
-sudo apt-get install arduino -y
-
 # Banshee
 sudo apt-get install banshee -y
 

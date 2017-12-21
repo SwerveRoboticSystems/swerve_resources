@@ -4,7 +4,13 @@
 #  @author Frederick Wachter - wachterfreddy@gmail.com
 #  @date Created: 2017-11-15
 
-echo "[SWERVE] Installing ROS"
+if [ -z "$1" ]; then
+	echo "[ERROR] Need to input ROS version to download packages for"
+	echo "[ERROR] Example to install ROS Indigo: bash ros_install.sh indigo"
+	exit
+fi
+
+echo "[SWERVE] Installing ROS $1"
 
 FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
