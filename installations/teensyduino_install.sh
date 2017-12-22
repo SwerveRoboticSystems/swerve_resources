@@ -21,10 +21,10 @@ mkdir $SWERVE_DIR/arduino_ide
 
 # Get Arduino IDE 1.0.6
 tar -xvzf arduino-1.0.6-linux$1.tgz
-mv arduino-1.0.6/* $SWERVE_DIR/arduino_ide/
+mv arduino-1.0.6/* $SWERVE_DIR/arduino/
 rm -rf arduino-1.0.6
 
-cd $SWERVE_DIR/arduino_ide
+cd $SWERVE_DIR/arduino
 
 # Get Teensy Loader and Teensyduino
 wget "https://www.pjrc.com/teensy/teensy_linux$1.tar.gz"
