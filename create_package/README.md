@@ -1,12 +1,11 @@
 # Swerve Resources - Create Package
 
-This folder contains files the make a generic skeleton ROS package using a command line alias that is applied 
-to the **~/.bashrc** file when the [setup script](./setup.sh) is run. In order for this to work properly, the location of 
-this folder must be the same as it is described below in order for the comment to function.
+This folder contains files the make a generic skeleton ROS package using the command **create_package** from a terminal. This
+command will setup the generic ROS package as shown below in the [layout](#layout) section. The alias for the **create_package**
+is automatically created and sourced when the [Swerve ROS setup script](../setup.ws) is run as described in the 
+[README](../README.md) in the main folder of this repo.
 
 ## Table of Contents
-- [Folder Location](#location)
-- [Adding Alias for Command Line](#alias)
 - [ROS Skeleton Package Layout](#layout)
 - [Create Skeleton ROS Package](#create)
 
@@ -14,34 +13,9 @@ this folder must be the same as it is described below in order for the comment t
 Full Name | Email | Date | Revision | Description
 --- | --- | --- | --- | ---
 Frderick Wachter | wachterfreddy@gmail.com | 2017-09-18 | 0.0.0 | Initial document
+Frderick Wachter | wachterfreddy@gmail.com | 2017-12-25 | 0.0.1 | Initial document
 
-<a id="location"/>
-
-## Folder Location
-
-The **swerve_resources** folder is expected to be located at the directory shown below. The alias that is
-automatically added to the computers **~/.bashrc** file by the [setup script](./setup.sh) references the 
-files within the **swerve_resources/create_package** folder in order to auto-generate a skeleton ROS package.
-
-```bash
-~/Swerve/swerve_resources
-```
-
-[Back to top](#top)
-
-<a id="alias"/>
-
-## Adding Alias for Command Line
-
-In order to automatically place the alias for autogenerating a skeleton ROS package, use the command below.
-
-**Note:** _This is already done automatically by the [Linux setup script](../installations/setup.sh) and does not need to
-be redone_
-
-```bash
-cd ~/Swerve/swerve_resources/create_package
-bash setup.sh
-```
+<a id="info">
 
 [Back to top](#top)
 
@@ -76,9 +50,9 @@ To create a skeleton ROS package, use the command below. This will create the RO
 name in the same folder from where the command was run. 
 
 ```bash
-create_package <package_name>
+create_package [package_name]
 ```
-> Replace **&lt;package_name&gt;** with the desired ROS package name.
+> Replace **[package_name]** with the desired ROS package name.
 
 [Back to top](#top)
 

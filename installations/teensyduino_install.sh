@@ -10,6 +10,8 @@ if [ -z "$1" ]; then
 	exit
 fi
 
+echo "[SWERVE] Installing Arduino IDE and Teensyduino"
+
 FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Add Teensy to UDev Rules

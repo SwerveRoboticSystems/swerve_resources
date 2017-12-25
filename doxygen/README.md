@@ -1,11 +1,13 @@
 # Swerve Resources - Doxygen Documentation Examples
 
-The examples folder gives C++ and Python examples of how to properly document code to work with doxygen auto code documentation generator. 
+The examples folder gives C++ and Python examples of how to properly document code to work with doxygen auto 
+code documentation generator. 
 
 ## Table of Contents
 - [Install Doxygen](#install)
 - [Package Organization](#organization)
 - [Generate Documentation](#generate)
+- [Questions?](#questions)
 
 ## Revisions List
 Full Name | Email | Date | Revision | Description
@@ -18,7 +20,8 @@ Frederick Wachter | wachterfreddy@gmail.com | 2017-09-18 | 0.0.0 | Initial docum
 
 Run the command below in the terminal window in order to download Doxygen.
 
-**Note:** _Doxygen is automatically downloaded using the [Linux setup script](../installations/setup.sh) and does not need to be redone_
+**Note:** _Doxygen is automatically downloaded with the [Swerve ROS Workspace setup script](../setup.sh) located 
+in the main folder of this repo_
 
 ```bash
 sudo apt-get install doxygen
@@ -54,11 +57,25 @@ The package organization is expected to be the same as below.
 
 ## Generate Documentation
 
-To generate the documentation from the code in the **scripts**, **inc**, and **src** folder, run the command below from within the _config_ directory.
+To generate the documentation from the code in the **scripts**, **inc**, and **src** folder, run the command 
+below from within the _config_ directory.
 
 ```bash
 doxygen doxygen_config.conf
 ```
+
+[Back to top](#top)
+
+<a id="questions"/>
+
+## Questions?
+
+If you have any questions, please feel free to contact Frederick Wachter. His icontact information
+is below.
+
+Name | Email
+--- | ---
+Frederick Wachter | [wachterfreddy@gmail.com](mailto:wachterfreddy@gmail.com?subject=Swerve%20Resources%20Repo)
 
 [Back to top](#top)
 
