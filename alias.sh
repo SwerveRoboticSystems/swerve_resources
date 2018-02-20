@@ -27,6 +27,6 @@ alias get_tf='rosrun tf view_frames'
 alias video_player='banshee'
 alias video_recorder='vokoscreen'
 
-alias root='cd $(git rev-parse --show-toplevel)' # go to top level of current git repo
+alias gitroot='cd $(git rev-parse --show-toplevel)' # go to top level of current git repo
 
 
